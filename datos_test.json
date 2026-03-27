@@ -1,0 +1,18 @@
+{
+  "campañas": [
+    {
+      "id": "C1",
+      "producto": "Zapatillas XYZ",
+      "gasto": 100,
+      "ingresos": 520,
+      "estado": "activa"
+    },
+    {
+      "id": "C2",
+      "producto": "Reloj Inteligente",
+      "gasto": 600,
+      "ingresos": 45,
+      "estado": "activa"
+    }
+  ]
+}
