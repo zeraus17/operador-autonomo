@@ -1,43 +1,57 @@
-﻿# 🧠 Autonomous Operator (Hackathon)
+﻿# 🧠 Autonomous Operator
 
-Sistema multi-agente autónomo que analiza campañas de e-commerce, toma decisiones financieras y ejecuta acciones de marketing sin intervención humana.
+### Sistema multi-agente que toma decisiones de negocio y ejecuta marketing automáticamente
+
+> Un operador autónomo capaz de analizar campañas de e-commerce, decidir qué hacer y generar nuevas estrategias de venta sin intervención humana.
 
 ---
 
-## 🚀 Flujo del Sistema
+## 🚀 ¿Qué hace este proyecto?
 
-1. **Analyst Agent**
+Este sistema simula un **equipo completo de growth**:
 
-   * Lee `datos_tienda.json`
-   * Calcula ROAS (Ingresos / Gasto)
+* 📊 Analiza campañas (ROAS)
+* 🧾 Decide acciones automáticamente
+* 🎯 Genera nuevas estrategias de marketing
+* 💾 Guarda decisiones como memoria persistente
 
-2. **Operator Agent**
+---
 
-   * Toma decisiones basadas en ROAS
-   * Persiste acciones en base de datos (memoria del sistema)
+## ⚙️ Cómo funciona
 
-3. **Creative Agent**
+### 1. Analyst Agent
 
-   * Detecta campaña perdedora
-   * Genera nuevos ángulos de venta
-   * Output estructurado usando JSON Schema (Tool Calling)
+* Lee `datos_tienda.json`
+* Calcula ROAS (Ingresos / Gasto)
+
+### 2. Operator Agent
+
+* Toma decisiones basadas en performance
+* Persiste acciones en base de datos
+
+### 3. Creative Agent
+
+* Detecta campañas perdedoras
+* Genera nuevos ángulos de venta usando LLM
+* Output estructurado con JSON Schema (Tool Calling)
 
 ---
 
 ## 🧩 Arquitectura
 
-* Separación por agentes
-* Orquestación tipo pipeline
-* Persistencia de estado (DB)
-* Retry system para robustez
+* 🧠 Multi-agent system
+* 🔁 Orquestación tipo pipeline
+* 💾 Persistencia de estado (memoria real)
+* 🛡️ Sistema de retries para robustez
+* 📦 Outputs estructurados (sin texto libre)
 
 ---
 
 ## 🛠️ Tecnologías
 
 * Node.js + TypeScript
-* LLM API (OpenAI / Gemini)
-* SQLite / PostgreSQL (Supabase ready)
+* LLM API (Gemini / OpenAI)
+* SQLite / PostgreSQL (Supabase-ready)
 * JSON Schema (Structured Output)
 
 ---
@@ -48,10 +62,25 @@ Sistema multi-agente autónomo que analiza campañas de e-commerce, toma decisio
 git clone https://github.com/TU_USUARIO/autonomous-operator.git
 cd autonomous-operator
 npm install
-cp .env.example .env
 ```
 
-Agregar API KEY en `.env`
+### 🔐 Configurar API Key
+
+```bash
+copy .env.example .env
+```
+
+Editar `.env`:
+
+```env
+GEMINI_API_KEY=tu_api_key
+```
+
+> ⚠️ Este proyecto requiere una API key propia (no incluida por seguridad)
+
+---
+
+## ▶️ Ejecutar
 
 ```bash
 npm run dev
@@ -59,35 +88,33 @@ npm run dev
 
 ---
 
-## 📦 Output del Sistema
-
-El sistema devuelve:
+## 📦 Output del sistema
 
 * 📊 Análisis de campañas (ROAS)
 * 🧾 Decisiones persistidas en DB
-* 🎯 Estrategias de marketing (JSON estructurado)
+* 🎯 Estrategias de marketing en JSON estructurado
 
 ---
 
-## 🔥 Highlights Técnicos
+## 🔥 Highlights técnicos
 
-* ✅ Multi-agent orchestration
-* ✅ Persistencia real (memoria)
-* ✅ Tool Calling con JSON Schema (sin texto libre)
+* ✅ Multi-agent orchestration real
+* ✅ Persistencia (memoria del sistema)
+* ✅ Tool Calling con JSON Schema
 * ✅ Manejo de errores con retries
-* ✅ Código modular y escalable
+* ✅ Arquitectura modular y escalable
 
 ---
 
 ## 🎥 Demo
 
-(Agregar link de Loom)
+👉 (Agregar Loom acá)
 
 ---
 
-## 📌 Notas
+## 🧠 Visión
 
-El sistema está diseñado para ser fácilmente desplegable en entornos serverless como Cloudflare Workers (adaptando la capa de DB).
+Este proyecto apunta a sistemas autónomos capaces de operar negocios digitales con mínima intervención humana.
 
 ---
 
