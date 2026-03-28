@@ -60,7 +60,7 @@ Este sistema simula un **equipo completo de growth**:
 
 ```bash
 git clone https://github.com/zeraus17/operador-autonomo.git
-cd autonomous-operator
+cd operador-autonomo
 npm install
 ```
 
