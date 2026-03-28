@@ -108,7 +108,7 @@ npm run dev
 
 ## 🎥 Demo
 
-👉 (Agregar Loom acá)
+👉 https://youtu.be/7rycY6IAJvM
 
 ---
 
