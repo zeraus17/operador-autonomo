@@ -59,7 +59,7 @@ Este sistema simula un **equipo completo de growth**:
 ## ⚙️ Setup
 
 ```bash
-git clone https://github.com/TU_USUARIO/autonomous-operator.git
+git clone https://github.com/zeraus17/operador-autonomo.git
 cd autonomous-operator
 npm install
 ```
